@@ -24,7 +24,18 @@ import {CommonModule} from '@angular/common';
 
     exports: [
 
-        NguiAdminComponent
+        NguiAdminComponent,
+        LayoutLeftToolbarComponent,
+        LayoutTopToolbarComponent
+
+    ],
+
+    entryComponents: [
+
+
+        NguiAdminComponent,
+        LayoutLeftToolbarComponent,
+        LayoutTopToolbarComponent
 
     ]
 
