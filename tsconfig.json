@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngui-admin": [
+        "dist/ngui-admin"
+      ],
+      "ngui-admin/*": [
+        "dist/ngui-admin/*"
+      ]
+    }
   }
 }

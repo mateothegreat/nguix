@@ -1,0 +1,73 @@
+<div class="wrapper">
+
+    <div class="left">
+
+        <div class="icon"
+             *ngIf="layoutTopToolbarService.iconUrl"
+             [routerLink]="[layoutTopToolbarService.iconLink]">
+
+            <img *ngIf="layoutTopToolbarService.iconUrl"
+                 [src]="layoutTopToolbarService.iconUrl">
+
+        </div>
+
+        <div class="logo">
+
+            <img *ngIf="layoutTopToolbarService.logoImageUrl"
+                 [routerLink]="[layoutTopToolbarService.logoLink]"
+                 [src]="layoutTopToolbarService.logoImageUrl">
+
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="search">
+
+            <input type="text"
+                   class=""
+                   placeholder="Search..."
+                   #search>
+
+        </div>
+
+        <div class="icons">
+
+            <i class="fas fa-calendar-exclamation"></i>
+            <i class="fas fa-grip-horizontal"></i>
+            <i class="fas fa-bullhorn"></i>
+            <i class="fas fa-user-astronaut"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--<mat-menu #appMenu="matMenu" [overlapTrigger]="false">-->
+
+<!--<button mat-menu-item [routerLink]="['/settings/account/profile']">-->
+
+<!--<i class="fas fa-cog"></i>-->
+
+<!--My Profile-->
+
+<!--</button>-->
+
+<!--<button mat-menu-item [routerLink]="['/help']">-->
+
+<!--<i class="fas fa-question-circle"></i>-->
+
+<!--Help-->
+
+<!--</button>-->
+<!--<button mat-menu-item [routerLink]="['/logout']" style="border-top: 1px solid #ddd;">-->
+
+<!--<i class="fas fa-sign-out"></i>-->
+
+<!--Logout-->
+
+<!--</button>-->
+
+<!--</mat-menu>-->
