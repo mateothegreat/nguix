@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {LayoutLeftToolbarService} from './layout-left-toolbar.service';
 
 @Component({
 
@@ -7,12 +8,10 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./layout-left-toolbar.component.scss']
 
 })
-export class LayoutLeftToolbarComponent implements OnInit {
+export class LayoutLeftToolbarComponent {
 
-    constructor() {
-    }
+    public constructor(public layoutLeftToolbarService: LayoutLeftToolbarService) {
 
-    ngOnInit() {
     }
 
 }

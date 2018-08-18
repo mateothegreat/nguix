@@ -11,4 +11,13 @@ export class LayoutTopToolbarService {
     public logoImageUrl: string;
     public logoLink: string;
 
+    public rightToolbarItems: {
+
+        label: string,
+        link: string,
+        icon: string,
+        color: string
+
+    }[];
+
 }

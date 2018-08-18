@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutLeftToolbarComponent } from './layout-left-toolbar.component';
+import { NgsoaApiComponent } from './ngsoa-api.component';
 
-describe('LayoutLeftToolbarComponent', () => {
-  let component: LayoutLeftToolbarComponent;
-  let fixture: ComponentFixture<LayoutLeftToolbarComponent>;
+describe('NgsoaApiComponent', () => {
+  let component: NgsoaApiComponent;
+  let fixture: ComponentFixture<NgsoaApiComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutLeftToolbarComponent ]
+      declarations: [ NgsoaApiComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutLeftToolbarComponent);
+    fixture = TestBed.createComponent(NgsoaApiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,21 @@
+:host {
+
+    .ngui-main-wrapper {
+
+        display: flex;
+        flex-direction: column;
+
+        .content {
+
+            position: absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+
+    }
+
+}
+

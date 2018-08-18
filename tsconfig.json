@@ -23,6 +23,18 @@
       ],
       "ngui-admin/*": [
         "dist/ngui-admin/*"
+      ],
+      "ngsoa-auth": [
+        "dist/ngsoa-auth"
+      ],
+      "ngsoa-auth/*": [
+        "dist/ngsoa-auth/*"
+      ],
+      "ngsoa-api": [
+        "dist/ngsoa-api"
+      ],
+      "ngsoa-api/*": [
+        "dist/ngsoa-api/*"
       ]
     }
   }

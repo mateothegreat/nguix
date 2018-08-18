@@ -1,9 +1,17 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class LayoutLeftToolbarService {
 
-  constructor() { }
+    public menuTopItems: {
+
+        label: string,
+        link: string,
+        icon: string,
+        color: string
+
+    }[];
+
 }

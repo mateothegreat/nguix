@@ -1,0 +1,61 @@
+:host {
+
+    .wrapper {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 60px;
+        height: 100%;
+        background: #191c1f;
+
+        .top {
+
+            border-top: 1px solid #464646;
+            border-bottom: 1px solid #464646;
+
+        }
+
+        .menu {
+
+            .menu-item {
+
+                cursor: pointer;
+                text-align: center;
+                padding: 20px 5px 20px 5px;
+                outline: none;
+
+                i {
+
+                    font-size: 22px;
+
+                }
+
+                &:hover {
+
+                    background: #203044;
+                    color: #fff;
+
+                }
+
+            }
+
+            .active {
+
+                background: #203044;
+                color: #fff;
+
+            }
+
+        }
+
+        .bottom {
+
+            border-top: 1px solid #464646;
+
+        }
+
+    }
+
+}

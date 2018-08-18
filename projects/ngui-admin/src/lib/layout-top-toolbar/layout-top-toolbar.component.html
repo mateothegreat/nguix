@@ -34,10 +34,8 @@
 
         <div class="icons">
 
-            <i class="fas fa-calendar-exclamation"></i>
-            <i class="fas fa-grip-horizontal"></i>
-            <i class="fas fa-bullhorn"></i>
-            <i class="fas fa-user-astronaut"></i>
+            <i *ngFor="let item of layoutTopToolbarService.rightToolbarItems"
+               [class]="item.icon"></i>
 
         </div>
 

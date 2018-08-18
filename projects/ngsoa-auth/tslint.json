@@ -1,0 +1,17 @@
+{
+    "extends": "../../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "ngsoa-auth",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "ngsoa-auth",
+            "kebab-case"
+        ]
+    }
+}

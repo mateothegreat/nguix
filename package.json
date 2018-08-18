@@ -8,7 +8,10 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "libs:build": "ng build --prod ngui-admin"
+        "libs:build": "ng build --prod ngui-admin",
+        "libs:release": "npm publish ./dist/ngui-admin",
+        "api:build": "ng build --prod ngsoa-api",
+        "api:publish": "npm publish ./dist/ngsoa-api"
     },
     "private": true,
     "dependencies": {

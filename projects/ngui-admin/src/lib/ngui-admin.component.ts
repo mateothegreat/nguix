@@ -5,10 +5,19 @@ import {Component, OnInit} from '@angular/core';
     selector: 'ngui-admin',
     template: `
 
-        <ngui-admin-layout-top-toolbar></ngui-admin-layout-top-toolbar>
+        <div class="ngui-main-wrapper">
 
+            <ngui-admin-layout-top-toolbar></ngui-admin-layout-top-toolbar>
+
+            <div class="content">
+
+                <ngui-admin-layout-left-toolbar></ngui-admin-layout-left-toolbar>
+
+            </div>
+
+        </div>
     `,
-    styles: []
+    styleUrls: ['./ngui-admin.component.scss']
 })
 export class NguiAdminComponent implements OnInit {
 

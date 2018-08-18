@@ -1,3 +1,54 @@
-<p>
-  layout-left-toolbar works!
-</p>
+<div class="wrapper">
+
+    <div class="top">
+
+        <div class="menu">
+
+            <div *ngFor="let menuTopItem of layoutLeftToolbarService.menuTopItems"
+                 class="menu-item"
+                 [routerLink]="[menuTopItem.link]"
+                 routerLinkActive="active">
+
+                <i [style.color]="menuTopItem.color"
+                   [class]="menuTopItem.icon"></i>
+
+            </div>
+
+        </div>
+
+        <div
+            class="top"
+            style="border-bottom: 0">
+
+            <div class="menu">
+
+                <div class="menu-item"
+                     [routerLink]="['/features']"
+                     routerLinkActive="active">
+
+                    <i style="color: yellow;"
+                       class="fas fa-plus-circle"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div class="menu">
+
+            <div class="menu-item">
+
+                <i style="color: mediumpurple;" class="fas fa-user-astronaut"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
