@@ -1,0 +1,22 @@
+<div class="app-section-wrapper">
+
+    <div class="head">
+
+        <span>{{ title }}</span> {{ subtitle }}
+
+
+    </div>
+
+    <div class="buttons">
+
+        <button *ngFor="let button of buttons"
+                [routerLink]="button.link"
+                mat-stroked-button>
+
+            {{ button.label }}
+
+        </button>
+
+    </div>
+
+</div>

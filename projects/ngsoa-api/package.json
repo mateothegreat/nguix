@@ -1,8 +1,12 @@
 {
-  "name": "@matthewdavis.io/ngsoa-api",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
-  }
+    "name": "@matthewdavis.io/ngsoa-api",
+    "version": "0.0.15",
+    "peerDependencies": {
+        "@auth0/angular-jwt": "^2.0.0",
+        "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+        "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+        "ngx-toastr": "^9.0.2",
+        "rxjs": "^6.2.2",
+        "rxjs-compat": "^6.2.2"
+    }
 }

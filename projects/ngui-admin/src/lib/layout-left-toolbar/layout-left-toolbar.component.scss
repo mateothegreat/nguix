@@ -25,6 +25,7 @@
                 text-align: center;
                 padding: 20px 5px 20px 5px;
                 outline: none;
+                transition: 0.5s;
 
                 i {
 
@@ -35,7 +36,12 @@
                 &:hover {
 
                     background: #203044;
-                    color: #fff;
+
+                    i {
+
+                        color: #fff !important;
+
+                    }
 
                 }
 

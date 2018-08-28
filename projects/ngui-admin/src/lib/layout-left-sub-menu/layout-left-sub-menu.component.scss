@@ -1,0 +1,136 @@
+:host {
+
+    .wrapper {
+
+        font-size: 15px;
+        width: 270px;
+        //border-right: 1px solid #233f50;
+        height: 100%;
+
+        .top {
+
+            display: flex;
+            align-items: center;
+
+            padding-left: 23px;
+            color: #ddd;
+            font-size: 22px;
+            font-weight: lighter;
+            border-bottom: 1px solid #2a3a4f;
+            cursor: pointer;
+
+            p {
+
+                margin: 0;
+
+            }
+            &:hover {
+
+                color: #4084de;
+
+            }
+
+            i {
+
+                cursor: pointer;
+                margin-right: 7px;
+
+                &:hover {
+
+                    color: #7fcb06;
+
+                }
+
+            }
+
+        }
+
+        .bottom {
+
+            .steps {
+
+                padding: 20px;
+
+                .step {
+
+                    .flex {
+
+                        display: flex;
+                        cursor: pointer;
+
+                        &:hover {
+
+                            text-decoration: underline;
+
+                        }
+
+                        .label {
+
+                            padding: 3px 7px;
+                            background: #224f64;
+                            color: #2c93a2;
+
+                        }
+
+                        .description {
+
+                            padding: 3px 7px;
+
+                            color: #ccc;
+
+                        }
+
+                    }
+
+                    .flex.active {
+
+                        .description {
+
+                            //font-weight: bold;
+                            color: #2bbbc5 !important;
+
+                        }
+
+                    }
+
+                    ul {
+
+                        color: #ddd;
+                        list-style-type: disc;
+                        border-left: 1px dashed #249da5;
+                        margin-left: 40px;
+                        margin-top: 10px;
+
+                        li {
+
+                            font-size: 14px;
+                            margin-left: -28px;
+                            padding: 5px;
+                            cursor: pointer;
+
+                            &:hover {
+
+                                text-decoration: underline;
+
+                            }
+
+                        }
+
+                        li.active {
+
+                            font-weight: bold;
+                            color: #2bbbc5;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

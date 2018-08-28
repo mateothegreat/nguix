@@ -1,0 +1,62 @@
+<div [@slideLeftRight] class="wrapper">
+
+    <div class="top"
+         [routerLink]="layoutLeftSubMenuService.link ? [layoutLeftSubMenuService.link] : null">
+
+        <i *ngIf="layoutLeftSubMenuService.back"
+           class="fas fa-angle-left"></i>
+
+        <i *ngIf="layoutLeftSubMenuService.icon"
+           [class]="layoutLeftSubMenuService.icon"></i>
+
+        <div>
+
+            {{ layoutLeftSubMenuService.title }}
+
+        </div>
+
+    </div>
+
+    <div class="bottom">
+
+        <div *ngIf="layoutLeftSubMenuService.steps"
+             class="steps">
+
+            <div *ngFor="let step of layoutLeftSubMenuService.steps; let i = index"
+                 class="step">
+
+                <div class="flex"
+                     [routerLink]="step.link"
+                     routerLinkActive="active">
+
+                    <div class="label rounded">{{ i + 1 }}</div>
+
+                    <div class="description">
+
+                        {{ step.title }}
+
+                    </div>
+
+                </div>
+
+                <ul>
+
+                    <li *ngFor="let sub of step.subs"
+                        [routerLink]="[sub.link]"
+                        routerLinkActive="active">
+
+                        {{ sub.title }}
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <ng-content></ng-content>
+
+    </div>
+
+</div>

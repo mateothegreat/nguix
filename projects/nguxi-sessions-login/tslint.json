@@ -1,0 +1,17 @@
+{
+    "extends": "../../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "nguxi-sessions-login",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "nguxi-sessions-login",
+            "kebab-case"
+        ]
+    }
+}

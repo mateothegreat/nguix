@@ -1,0 +1,40 @@
+:host {
+
+    .app-section-wrapper {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #2a3a4f;
+        padding: 15px;
+
+        .head {
+
+            //margin-left: 20px;
+
+            color: #ddd;
+            font-size: 22px;
+            font-weight: lighter;
+
+            span {
+
+                //color: #bd81da;
+                font-weight: bolder;
+
+            }
+
+        }
+
+        .buttons {
+
+            button {
+
+                margin-left: 10px;
+
+            }
+
+        }
+
+    }
+
+}

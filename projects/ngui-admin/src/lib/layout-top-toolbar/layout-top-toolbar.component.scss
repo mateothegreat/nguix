@@ -18,7 +18,7 @@
 
             .icon {
 
-                width: 72px;
+                width: 60px;
                 height: 60px;
                 padding-top: 8px;
                 background: #144b71;
@@ -33,9 +33,11 @@
 
             .logo {
 
+                width: 233px;
+
                 display: flex;
                 justify-content: center;
-                flex: 0 1 158px;
+                flex: 0 1 233px;
                 background: #1b5f8e;
 
                 img {
@@ -82,6 +84,7 @@
                     padding: 20px;
                     cursor: pointer;
                     border-left: 1px solid #1b5f8e;
+                    transition: 0.5s;
 
                     &:hover {
 

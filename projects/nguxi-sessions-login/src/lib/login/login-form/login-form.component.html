@@ -1,0 +1,87 @@
+<div class="welcome">
+
+    <p>
+
+        Welcome back, enter your <br>email address below!
+
+    </p>
+
+</div>
+
+<form [formGroup]="formGroup">
+
+    <div class="right-flex">
+
+        <table style="background: unset; border: 0">
+
+            <tr>
+
+                <td>
+
+                    <input matInput
+                           style="width: 300px"
+                           appAutofocus
+                           placeholder="Email Address"
+                           formControlName="username"
+                           class="form-control">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <input matInput
+                           style="width: 300px"
+                           placeholder="Password"
+                           type="password"
+                           formControlName="password"
+                           class="form-control">
+
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td style="text-align: right;">
+
+                    <button mat-raised-button
+                            [disabled]="!formGroup.valid"
+                            (click)="onLoginButtonClick()">Login
+                    </button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td style="text-align: right;">
+
+                    <a [routerLink]="['/login/reset']">Forgot your password?</a>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</form>
+
+<div class="register">
+
+    <p>
+
+        Don't have an account?<br>
+
+        <a [routerLink]="['/signup']">Subscribe Now!</a>
+
+    </p>
+
+</div>

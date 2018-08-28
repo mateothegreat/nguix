@@ -1,12 +1,12 @@
 {
     "name": "@mateothegreat/ngui-admin",
-    "version": "0.0.3",
+    "version": "0.0.33",
     "peerDependencies": {
+        "@angular/animations": "^6.0.0-rc.0 || ^6.0.0",
         "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
         "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
         "@angular/cdk": "^6.4.5",
         "@angular/material": "^6.4.5"
     },
-    "dependencies": {
-    }
+    "dependencies": {}
 }

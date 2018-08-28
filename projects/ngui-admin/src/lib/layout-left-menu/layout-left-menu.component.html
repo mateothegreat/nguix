@@ -1,0 +1,83 @@
+<div class="layout-left-menu wrapper">
+
+    <div class="top">
+
+        <div class="head">
+
+            {{ layoutLeftMenuService.title }}
+
+        </div>
+
+        <div class="menu">
+
+            <div *ngFor="let item of layoutLeftMenuService.items"
+                 class="item"
+                 [routerLink]="[item.link]"
+                 routerLinkActive="active">
+
+                <i *ngIf="item.icon"
+                   [class]="item.icon"></i>
+
+                {{ item.label }}
+
+            </div>
+
+        </div>
+
+        <div *ngIf="layoutLeftMenuService.title2"
+             class="head">
+
+            {{ layoutLeftMenuService.title2 }}
+
+        </div>
+
+        <div *ngIf="layoutLeftMenuService.items2"
+             class="menu">
+
+            <div *ngFor="let item of layoutLeftMenuService.items2"
+                 class="item"
+                 [routerLink]="[item.link]"
+                 routerLinkActive="active">
+
+                <i *ngIf="item.icon"
+                   [class]="item.icon"></i>
+
+                {{ item.label }}
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--<div class="bottom">-->
+
+    <!--<div class="title">-->
+
+    <!--<i class="fas fa-cloud"></i>-->
+
+    <!--Upgrade Storage-->
+
+    <!--</div>-->
+
+    <!--&lt;!&ndash;<div class="bar">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<mat-progress-bar mode="determinate" [value]="90"></mat-progress-bar>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--<div class="label">-->
+
+    <!--<div class="text">-->
+
+    <!--240GB of 300GB Used-->
+
+    <!--</div>-->
+
+    <!--<i class="fas fa-question-circle"></i>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+
+</div>

@@ -3,13 +3,13 @@ import {HttpClient} from '@angular/common/http';
 import {PageRequest} from './PageRequest';
 import {Injectable} from '@angular/core';
 import {Pageable} from './Pageable';
+import {NgsoaApiService} from '../ngsoa-api.service';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class APIClient<T> {
 
-    public BASE_URL: string;
-
-    public constructor(private httpClient: HttpClient) {
+    public constructor(private httpClient: HttpClient,
+                       private ngsoaApiService: NgsoaApiService) {
 
     }
 
@@ -17,11 +17,11 @@ export class APIClient<T> {
 
         if (dataTablePage) {
 
-            return this.httpClient.get<Pageable<T>>(`${this.BASE_URL}/${url}?${ dataTablePage.toParams() }`);
+            return this.httpClient.get<Pageable<T>>(`${this.ngsoaApiService.BASE_URL}/${url}?${ dataTablePage.toParams() }`);
 
         } else {
 
-            return this.httpClient.get<Pageable<T>>(`${this.BASE_URL}/${url}`);
+            return this.httpClient.get<Pageable<T>>(`${this.ngsoaApiService.BASE_URL}/${url}`);
 
         }
 
@@ -29,13 +29,13 @@ export class APIClient<T> {
 
     public get<T>(url: string): Observable<T> {
 
-        return this.httpClient.get<T>(`${this.BASE_URL}/${url}`);
+        return this.httpClient.get<T>(`${this.ngsoaApiService.BASE_URL}/${url}`);
 
     }
 
     public search<T>(url: string, pageRequest: PageRequest): Observable<any> {
 
-        return this.httpClient.get<T>(`${this.BASE_URL}/${url}?terms=${pageRequest.terms}&limit=${pageRequest.limit}&offset=${pageRequest.offset}`);
+        return this.httpClient.get<T>(`${this.ngsoaApiService.BASE_URL}/${url}?terms=${pageRequest.terms}&limit=${pageRequest.limit}&offset=${pageRequest.offset}`);
 
     }
 
@@ -43,7 +43,7 @@ export class APIClient<T> {
 
         try {
 
-            return this.httpClient.post<T>(`${this.BASE_URL}/${url}`, body);
+            return this.httpClient.post<T>(`${this.ngsoaApiService.BASE_URL}/${url}`, body);
 
         } catch (e) {
 
@@ -55,13 +55,13 @@ export class APIClient<T> {
 
     public put<T>(url: string, body?: any): Observable<T> {
 
-        return this.httpClient.put<T>(`${this.BASE_URL}/${url}`, body);
+        return this.httpClient.put<T>(`${this.ngsoaApiService.BASE_URL}/${url}`, body);
 
     }
 
     public delete<T>(url: string): Observable<T> {
 
-        return this.httpClient.delete<T>(`${this.BASE_URL}/${url}`);
+        return this.httpClient.delete<T>(`${this.ngsoaApiService.BASE_URL}/${url}`);
 
     }
 

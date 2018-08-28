@@ -35,6 +35,24 @@
       ],
       "ngsoa-api/*": [
         "dist/ngsoa-api/*"
+      ],
+      "nguxi-commons": [
+        "dist/nguxi-commons"
+      ],
+      "nguxi-commons/*": [
+        "dist/nguxi-commons/*"
+      ],
+      "nguxi-datatable": [
+        "dist/nguxi-datatable"
+      ],
+      "nguxi-datatable/*": [
+        "dist/nguxi-datatable/*"
+      ],
+      "nguxi-sessions-login": [
+        "dist/nguxi-sessions-login"
+      ],
+      "nguxi-sessions-login/*": [
+        "dist/nguxi-sessions-login/*"
       ]
     }
   }

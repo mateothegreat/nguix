@@ -1,0 +1,65 @@
+:host {
+
+    .wrapper {
+
+        .head {
+
+            padding: 20px;
+            font-size: 14px;
+            color: #aaa;
+
+        }
+
+        .top {
+
+            font-size: 24px;
+            letter-spacing: 1.5px;
+            padding: 20px 19px 20px;
+            color: #ccc;
+            font-weight: lighter;
+            border-bottom: 1px solid #555;
+
+        }
+
+        .list {
+
+            padding: 0 10px;
+            margin-bottom: 20px;
+
+            .item {
+
+                display: flex;
+                align-items: center;
+                color: #ddd;
+                padding: 5px;
+                cursor: pointer;
+                font-weight: lighter;
+
+                &:hover {
+
+                    font-weight: bold;
+
+                }
+
+                i {
+
+                    font-size: 10px;
+                    padding: 5px;
+
+                }
+
+            }
+
+            .item.active {
+
+                color: #7fcb06 !important;
+                font-weight: bold;
+
+            }
+
+        }
+
+    }
+
+}
+

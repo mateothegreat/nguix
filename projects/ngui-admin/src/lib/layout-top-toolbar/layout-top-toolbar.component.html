@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="layout-top-toolbar wrapper">
 
     <div class="left">
 
@@ -37,35 +37,30 @@
             <i *ngFor="let item of layoutTopToolbarService.rightToolbarItems"
                [class]="item.icon"></i>
 
+            <i class="fas fa-cog" [matMenuTriggerFor]="appMenu"></i>
+            
         </div>
 
     </div>
 
 </div>
 
-<!--<mat-menu #appMenu="matMenu" [overlapTrigger]="false">-->
+<mat-menu #appMenu="matMenu" [overlapTrigger]="false">
 
-<!--<button mat-menu-item [routerLink]="['/settings/account/profile']">-->
+    <button mat-menu-item [routerLink]="['/settings/account/profile']">
 
-<!--<i class="fas fa-cog"></i>-->
+        <i class="fas fa-cog"></i>
 
-<!--My Profile-->
+        My Profile
 
-<!--</button>-->
+    </button>
 
-<!--<button mat-menu-item [routerLink]="['/help']">-->
+    <button mat-menu-item [routerLink]="['/logout']" style="border-top: 1px solid #ddd;">
 
-<!--<i class="fas fa-question-circle"></i>-->
+        <i class="fas fa-sign-out"></i>
 
-<!--Help-->
+        Logout
 
-<!--</button>-->
-<!--<button mat-menu-item [routerLink]="['/logout']" style="border-top: 1px solid #ddd;">-->
+    </button>
 
-<!--<i class="fas fa-sign-out"></i>-->
-
-<!--Logout-->
-
-<!--</button>-->
-
-<!--</mat-menu>-->
+</mat-menu>
